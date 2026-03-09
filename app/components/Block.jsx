@@ -1,12 +1,14 @@
 "use client";
 
-export default function Block({position}) {
+export default function Block({position}){
 
-  return (
+  return(
+
     <mesh position={position}>
-      <boxGeometry args={[1,1,1]} />
-      <meshStandardMaterial color="orange" />
+      <boxGeometry args={[1,1,1]}/>
+      <meshStandardMaterial color="orange"/>
     </mesh>
+
   )
 
 }

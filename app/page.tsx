@@ -1,15 +1,17 @@
 "use client";
 
-import Scene from "./components/Scene";
-import { useState } from "react";
+import HandTracker from "./components/HandTracker";
 
-export default function Home() {
+export default function Home(){
 
-  const [blocks,setBlocks] = useState([[0,0,0]])
+  return(
+    <main>
 
-  return (
-    <main style={{width:"100vw",height:"100vh"}}>
-      <Scene blocks={blocks}/>
+      <h1>Hand Tracking Test</h1>
+
+      <HandTracker/>
+
     </main>
   )
+
 }
